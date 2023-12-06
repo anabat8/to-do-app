@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/toDo")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://todo.tandrei.com"})
 @RequiredArgsConstructor
 public class ActivityController {
 
