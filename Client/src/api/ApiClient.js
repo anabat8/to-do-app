@@ -1,4 +1,4 @@
-const URL = "https://todo.tandrei.com:8080/api";
+const URL = "https://todo.tandrei.com/api";
 
 const sendUserNamePasswordForm = 
     async ({username, password, isLogin}) => {
