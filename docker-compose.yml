@@ -3,16 +3,15 @@ version: "3"
 networks:
   todo:
     driver: bridge
-
 services:
   spring-boot-app:
-    build:
-      context: ./Server
+    container_name: todo-server
+    image: tdrandrei/todo-server
     networks:
       - todo
 
   react-app:
-    build:
-      context: ./Client
+    container_name: todo-client
+    image: tdrandrei/todo-client
     networks:
       - todo
