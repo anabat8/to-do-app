@@ -8,15 +8,11 @@ services:
   spring-boot-app:
     build:
       context: ./Server
-    ports:
-      - "8080:8080"
     networks:
       - todo
 
   react-app:
     build:
       context: ./Client
-    ports:
-      - "80:80"
     networks:
       - todo
